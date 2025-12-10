@@ -1,6 +1,39 @@
 # 债务化解平台 - DDD 架构实践
 
-> 基于领域驱动设计（DDD）的债务化解核心域实现，包含完整的战略设计文档和战术代码实现。
+> 基于领域驱动设计（DDD）的债务化解核心域实现，包含完整的战略设计文档和战术代码实现。  
+> **English summary:** A debt settlement core domain implemented with Domain‑Driven Design (DDD), with strategic design docs and production‑style code.
+
+## 关于本仓库 / About this repo
+
+- 以「债务化解」为业务场景，对 DDD 进行系统实践，是我用于学习和面试展示的一个项目。
+- 仓库包含：战略设计文档（`docs/`）、核心领域模型与应用代码（`src/`）以及部分单元测试示例。
+- 来自线上成熟系统的脱敏版本，保留了核心的领域建模和架构设计思路。
+
+## 我的角色与贡献（Interview Ready）
+
+- 主导债务化解领域的限界上下文划分（分账上下文 / 化债上下文）及聚合设计。
+- 设计并实现债务合同、还款计划、分账记录等核心聚合和值对象。
+- 引入领域事件、仓储模式、防腐层等 DDD 战术模式，并在项目中落地。
+- 为核心领域逻辑补充单元测试，保证模型行为的可验证性与可演进性。
+- 对原有传统三层架构进行重构，使复杂业务规则更加清晰、可维护。
+
+## 本地运行 / How to run
+
+### 环境要求
+
+- JDK 17+
+- Maven 3.8+
+- IDE：推荐 IntelliJ IDEA 或 VS Code（带 Maven 插件）
+
+### 快速开始
+
+```bash
+# 运行单元测试，验证领域模型行为
+mvn test
+
+# 如需启动应用（如果项目中存在 Spring Boot 启动类）
+mvn spring-boot:run
+```
 
 ## 📖 项目背景
 
